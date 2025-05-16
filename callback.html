@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call Back — Car Showcase</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header id="navbar"></header>
+
+  <main>
+    <section id="callback">
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@domain.com"
+          required
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        />
+
+        
+        <div class="phone-wrapper">
+          <div class="phone-select">
+            <div class="custom-country-select" id="country-select">
+              <div class="selected-country" id="selected-country">
+                <span class="flag">🇺🇸</span>
+                <span class="code">+1</span>
+              </div>
+              <ul class="country-list" id="country-list">
+                <!-- Список стран будет добавляться с помощью JavaScript -->
+              </ul>
+            </div>
+          </div>
+          <input 
+            type="tel" 
+            id="phone-input" 
+            placeholder="Enter your phone number" 
+            required 
+          />
+        </div>
+        <button type="submit">Submit</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/libphonenumber-js@1.10.48/bundle/libphonenumber-js.min.js"></script>
+  <script src="assets/js/loadNavbar.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/callback-form.js"></script>
+</body>
+</html>
