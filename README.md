@@ -17,22 +17,6 @@
 - JavaScript (Vanilla)
 - Cloudflare Workers (для безопасной отправки формы в Telegram)
 
-## Структура проекта
-
-project/
-├── index.html
-├── callback.html
-├── components/
-│ └── navbar.html
-├── assets/
-│ ├── scss/
-│ ├── css/
-│ └── js/
-│ ├── main.js
-│ ├── loadNavbar.js
-│ └── callback-form.js
-
-
 ## Интеграция с Telegram
 
 Все данные из формы обратной связи отправляются в Telegram-бота через Cloudflare Worker. Это позволяет скрыть токен и повысить безопасность.
